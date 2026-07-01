@@ -1191,7 +1191,7 @@
   setInterval(updateCountdown, 1000);
 
   /* --- RSVP via WhatsApp + Compartir simultáneo --- */
-  const WHATSAPP_NUMBER = '51946446199';
+  const WHATSAPP_NUMBER = '51';
 
   /* Texto de invitación para reenviar a otros */
   function textoInvitacion() {
@@ -1218,15 +1218,13 @@
   }
 
   function sendRSVP() {
-    const name  = document.getElementById('guest-name').value.trim();
-    const count = document.getElementById('guest-count').value;
-    const msg   = document.getElementById('guest-msg').value.trim();
-
-    if (!name) {
-      showToast('Por favor, escribe tu nombre 🌿');
-      document.getElementById('guest-name').focus();
-      return;
-    }
+  alert(
+    "🎉 Este evento ya se realizó.\n\n" +
+    "Gracias por tu interés.\n\n" +
+    "Si tienes alguna consulta o deseas una invitación digital personalizada, " +
+    "por favor comunícate con el creador de esta invitación."
+  );
+}
 
     const countLabels = {
       '1':'solo yo (1 persona)',
